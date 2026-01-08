@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DataOracle – AI-powered analytics platform. Upload CSV, ask in plain English, get predictions, anomalies, and explainable insights." />
+    <meta name="keywords" content="AI analytics, AutoML, natural language, data visualization, SHAP, anomaly detection, PyCaret" />
+    <meta name="author" content="DataOracle Team" />
+    <meta name="theme-color" content="#6366f1" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="DataOracle – AI That Reveals Insights" />
+    <meta property="og:description" content="Upload data. Ask questions. Get predictions. Powered by AutoML, LangChain, and SHAP." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dataoracle.ai" />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DataOracle – AI That Reveals Insights" />
+    <meta name="twitter:description" content="AI analytics with natural language, AutoML, and explainable predictions." />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Google Fonts: Inter + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Manifest (PWA) -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Title -->
+    <title>DataOracle – AI That Reveals Insights</title>
+
+    <!-- Vite injects CSS/JS here -->
+    <!-- <link rel="stylesheet" href="/src/index.css" /> -->
+  </head>
+
+  <body class="min-h-screen bg-gray-50 text-gray-900 antialiased dark:bg-neutral-900 dark:text-gray-100">
+    <!-- Root -->
+    <div id="root"></div>
+
+    <!-- Vite script -->
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Optional: Service Worker Registration (PWA) -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
+
+    <!-- Analytics (Optional - Add later) -->
+    <!-- <script async src="https://umami.dataoracle.ai/script.js" data-website-id="xxxx"></script> -->
+  </body>
+</html>
